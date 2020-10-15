@@ -1,0 +1,12 @@
+
+
+{% block content %}
+{% csrf_token %}
+    <h1>Welcome, {{user.username}}</h1>
+
+    <a href="{% url 'registration' %}">Detail Register</a>
+    <a href="{% url 'search' %}">Detail Search</a>
+    <a href="{% url 'serial' %}">Serializer</a>
+
+
+{% endblock %}
